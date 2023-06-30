@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Greeter from './utils/Greeter';
 
   export default {
@@ -18,6 +18,10 @@ import Greeter from './utils/Greeter';
     },
     methods: {
      callGreeter() {
+      let num1: number;
+      // num1 = 'asd';
+      num1 = 22;
+      
       let greet = new Greeter('From TS class');
       console.log(greet.greet());
       return greet.greet();
